@@ -47,7 +47,7 @@
 
 ## **四、完全二叉树**
 完全二叉树从根结点到倒数第二层满足完美二叉树，最后一层可以不完全填充，其叶子结点都靠左对齐。
-![图4  完全二叉树](https://github.com/TF27674569/Tree/blob/master/image/tree_two.png) 
+![图4  完全二叉树](https://github.com/TF27674569/Tree/blob/master/image/prefct_two_tree.png) 
  
 部分概念：  
 1.满二叉树是完全二叉树，反正不一定  
