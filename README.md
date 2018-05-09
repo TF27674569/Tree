@@ -13,13 +13,13 @@
 &nbsp;　　2.树的度：所有节点中最大的节点度为树的度  
 &nbsp;　　3.树的高：最底层的节点所在的层树，为树的高度  
 
-![图1  普通树](https://github.com/TF27674569/Tree/blob/master/image/commontree.png"普通树" )  
-
+![图1  普通树](https://github.com/TF27674569/Tree/blob/master/image/commontree.png)   
+"普通树" 
 
 &nbsp;　　树高为4，树的度为3  
-![图2  有序树](https://github.com/TF27674569/Tree/blob/master/image/tree1.png)  
+![图2  有序树](https://github.com/TF27674569/Tree/blob/master/image/tree1.png)    
 "有序树"     
-![图3  无序树](https://github.com/TF27674569/Tree/blob/master/image/tree2.png)   
+![图3  无序树](https://github.com/TF27674569/Tree/blob/master/image/tree2.png)     
 "无序树"  
 
 
