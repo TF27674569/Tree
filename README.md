@@ -10,6 +10,17 @@
 除了根节点外，每个子节点可以分为多个不相交的子树  
 
 &nbsp;　　1.节点度：每个节点有几个子节点则度为几   
-&nbsp;　　2.树的度：所有节点中最大的节点度为树的度
-![  ](https://github.com/TF27674569/Parcel/blob/master/c%2B%2Bparcel.bmp) 
+&nbsp;　　2.树的度：所有节点中最大的节点度为树的度  
+&nbsp;　　3.树的高：最底层的节点所在的层树，为树的高度  
+
+![图1  普通树](https://github.com/TF27674569/Tree/blob/master/image/commontree.png) 
+
+&nbsp;　　树高为4，树的度为3  
+![图2  有序树](https://github.com/TF27674569/Tree/blob/master/image/tree1.png)     
+![图3  无序树](https://github.com/TF27674569/Tree/blob/master/image/tree1.png)   
+
+
+## **二、二叉树**
+是最大度为2的树成为二叉树，二叉树分为左子树，和右子树
+
 
