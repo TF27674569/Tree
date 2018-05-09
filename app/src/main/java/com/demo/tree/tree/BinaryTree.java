@@ -198,6 +198,7 @@ public class BinaryTree<T> implements Tree<T> {
      */
     private void prentTree(int index) {
         if (index < treeSize) {
+
             // 先根 再左 再右
             Log.e("BinaryTree", treeContainer[index].toString());
 

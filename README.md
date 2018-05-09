@@ -68,5 +68,123 @@
 
 ![图5  完全二叉树](https://github.com/TF27674569/Tree/blob/master/image/tree4.png) 
 
+## **五、代码实现**
+1.抽象树函数
+```java
+public interface Tree<T> {
+
+    /**
+     * 找左子树
+     *
+     * @param parentNode 父节点
+     * @return
+     */
+    T leftTree(T parentNode);
+
+    /**
+     * 找右
+     *
+     * @param parentNode 父节点
+     * @return
+     */
+    T rightTree(T parentNode);
+
+    /**
+     * 找父节点
+     *
+     * @param target
+     * @return
+     */
+    T findParent(T target);
+
+    /**
+     * 找兄弟节点
+     *
+     * @param target
+     * @return
+     */
+    T findBrother(T target);
+
+    /**
+     * 添加
+     *
+     * @param data 添加
+     */
+    void add(T data);
+
+
+    /**
+     * 打印树
+     */
+    void prentTree();
+
+    /**
+     * 求树的深度
+     * @return
+     */
+    int depth();
+
+}
+```
+2.树的存储对象和大小
+```java
+    /**
+     * 树的容器 这里使用数组实现树的结构
+     */
+    private Object[] treeContainer;
+
+    /**
+     * 树的大小
+     */
+    private int treeSize;
+```
+3.由于是以数组的结构并且完全二叉树的添加都是在树为尾部操作所以给用户呈现的打印为树结构
+
+```java
+    /**
+     * 打印位置
+     *
+     * @param index
+     */
+    private void prentTree(int index) {
+        if (index < treeSize) {
+            // 先根 再左 再右
+            Log.e("BinaryTree", treeContainer[index].toString());
+
+            // 打左子树
+            prentTree((index * 2 + 1));
+
+            // 打右子树
+            prentTree((index * 2 + 2));
+        }
+    }
+    
+         if (index < treeSize) {
+               
+                // 打左子树
+                prentTree((index * 2 + 1));
+                
+                 // 先左 再根 再右
+                  Log.e("BinaryTree", treeContainer[index].toString());
+    
+                // 打右子树
+                prentTree((index * 2 + 2));
+            }
+    
+         if (index < treeSize) {
+               
+                // 打左子树
+                prentTree((index * 2 + 1));
+    
+                // 打右子树
+                prentTree((index * 2 + 2));
+                
+                 // 先左 再右 再根 
+                  Log.e("BinaryTree", treeContainer[index].toString());
+            }
+```
+
+可以将左子树，右子树 打印 的顺序改变，打印更多的结果
+
 
 

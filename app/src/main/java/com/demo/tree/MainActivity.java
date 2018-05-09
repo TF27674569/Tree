@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             binaryTree.add(""+i);
         }
 
-//        binaryTree.prentTree();
+        binaryTree.prentTree();
 
 
         Log.e("TAG", binaryTree.depth()+"" );
